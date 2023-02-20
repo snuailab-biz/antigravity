@@ -1,0 +1,17 @@
+{
+    "data" : {
+        "band_size_now" : 75,
+        "cup_size_now" : "D",
+        "hook_num_now" : 3,
+        "breast_space_fingers": "손가락 1개 정도",
+        "good_bra_score_cup" : 6,
+        "bra_cup_bad_point": "적당하며, 괜찮아요",
+        "good_bra_score_band": 5,
+        "bra_band_bad_point": "밴드가 압박감을 주거나, 주변으로 살이 튀어나와요.",
+        "breast_shape": "큰가슴",
+        "breast_gol_shape": 3,
+        "height": 158,
+        "weight": 55,
+        "wai_cir": 10
+    } 
+}

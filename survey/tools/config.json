@@ -1,0 +1,6 @@
+{
+    "survey_data_dir": "F:\\안티그래비티\\python_code\\data\\qna_data\\qna_anti_4000.xlsx",
+    "sizekorea_data_dir": "F:\\안티그래비티\\python_code\\data\\size_korea_new\\최종_볼륨_계산 데이터셋.xlsx",
+    "isTrain": true,
+    "isInference": true
+}

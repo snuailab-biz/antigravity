@@ -1,0 +1,90 @@
+2023-02-20 09:23:48,652 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_maskrcnn took 0.2677004337310791 secons[0m
+2023-02-20 09:23:48,856 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_u2net took 0.20355820655822754 secons[0m
+2023-02-20 09:23:48,951 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_point took 0.09479880332946777 secons[0m
+2023-02-20 09:24:24,043 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_maskrcnn took 0.09658336639404297 secons[0m
+2023-02-20 09:24:24,226 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_u2net took 0.18247747421264648 secons[0m
+2023-02-20 09:24:24,318 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_point took 0.0918891429901123 secons[0m
+2023-02-20 09:24:38,192 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict took 14.247326850891113 secons[0m
+2023-02-20 09:24:38,193 - fittingAI @antigravity - detectorProcess - [32mINFO - mask segmentation complete[0m
+2023-02-20 09:24:38,193 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: detectorProcess took 14.24832820892334 secons[0m
+2023-02-20 09:25:00,936 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: volumeProcess took 22.74216341972351 secons[0m
+2023-02-20 09:25:01,059 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_maskrcnn took 0.09773564338684082 secons[0m
+2023-02-20 09:25:01,212 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_u2net took 0.15304994583129883 secons[0m
+2023-02-20 09:25:01,293 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_point took 0.08072447776794434 secons[0m
+2023-02-20 09:25:03,096 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict took 2.136354923248291 secons[0m
+2023-02-20 09:25:03,097 - fittingAI @antigravity - detectorProcess - [32mINFO - mask segmentation complete[0m
+2023-02-20 09:25:03,097 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: detectorProcess took 2.137340545654297 secons[0m
+2023-02-20 09:33:50,329 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_maskrcnn took 0.09637832641601562 secons[0m
+2023-02-20 09:33:50,492 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_u2net took 0.16227316856384277 secons[0m
+2023-02-20 09:33:50,583 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_point took 0.09098052978515625 secons[0m
+2023-02-20 09:33:53,689 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict took 3.4578404426574707 secons[0m
+2023-02-20 09:33:53,690 - fittingAI @antigravity - detectorProcess - [32mINFO - mask segmentation complete[0m
+2023-02-20 09:33:53,691 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: detectorProcess took 3.459095001220703 secons[0m
+2023-02-20 09:34:08,493 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: volumeProcess took 14.801881313323975 secons[0m
+2023-02-20 09:34:08,633 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_maskrcnn took 0.10444235801696777 secons[0m
+2023-02-20 09:34:08,783 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_u2net took 0.15033435821533203 secons[0m
+2023-02-20 09:34:08,867 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_point took 0.0837697982788086 secons[0m
+2023-02-20 09:34:30,357 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_maskrcnn took 0.09651780128479004 secons[0m
+2023-02-20 09:34:30,502 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_u2net took 0.14412379264831543 secons[0m
+2023-02-20 09:34:30,590 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_point took 0.0883030891418457 secons[0m
+2023-02-20 09:34:46,757 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict took 16.497480869293213 secons[0m
+2023-02-20 09:34:46,758 - fittingAI @antigravity - detectorProcess - [32mINFO - mask segmentation complete[0m
+2023-02-20 09:34:46,758 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: detectorProcess took 16.4984347820282 secons[0m
+2023-02-20 09:35:46,690 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: volumeProcess took 59.93156051635742 secons[0m
+2023-02-20 09:35:46,812 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_maskrcnn took 0.10154557228088379 secons[0m
+2023-02-20 09:35:46,955 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_u2net took 0.14311623573303223 secons[0m
+2023-02-20 09:35:47,040 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_point took 0.0843808650970459 secons[0m
+2023-02-20 09:36:04,071 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict took 17.36147403717041 secons[0m
+2023-02-20 09:36:04,071 - fittingAI @antigravity - detectorProcess - [32mINFO - mask segmentation complete[0m
+2023-02-20 09:36:04,072 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: detectorProcess took 17.36242938041687 secons[0m
+2023-02-20 09:36:30,590 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: volumeProcess took 26.517999172210693 secons[0m
+2023-02-20 09:37:25,935 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_maskrcnn took 0.0950307846069336 secons[0m
+2023-02-20 09:37:26,077 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_u2net took 0.1415708065032959 secons[0m
+2023-02-20 09:37:26,165 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_point took 0.08727812767028809 secons[0m
+2023-02-20 09:38:51,505 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict took 85.66573643684387 secons[0m
+2023-02-20 09:38:51,505 - fittingAI @antigravity - detectorProcess - [32mINFO - mask segmentation complete[0m
+2023-02-20 09:38:51,506 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: detectorProcess took 85.66671776771545 secons[0m
+2023-02-20 09:39:16,457 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: volumeProcess took 24.95147132873535 secons[0m
+2023-02-20 09:39:16,606 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_maskrcnn took 0.11497902870178223 secons[0m
+2023-02-20 09:39:16,761 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_u2net took 0.15514874458312988 secons[0m
+2023-02-20 09:39:16,850 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_point took 0.08874273300170898 secons[0m
+2023-02-20 09:39:27,726 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict took 11.235884666442871 secons[0m
+2023-02-20 09:39:27,726 - fittingAI @antigravity - detectorProcess - [32mINFO - mask segmentation complete[0m
+2023-02-20 09:39:27,726 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: detectorProcess took 11.236884355545044 secons[0m
+2023-02-20 11:03:28,717 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_maskrcnn took 0.09647107124328613 secons[0m
+2023-02-20 11:03:28,872 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_u2net took 0.15461444854736328 secons[0m
+2023-02-20 11:03:28,967 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_point took 0.09485912322998047 secons[0m
+2023-02-20 11:03:31,050 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict took 2.4312758445739746 secons[0m
+2023-02-20 11:03:31,051 - fittingAI @antigravity - detectorProcess - [32mINFO - mask segmentation complete[0m
+2023-02-20 11:03:31,051 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: detectorProcess took 2.4322261810302734 secons[0m
+2023-02-20 14:01:42,614 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_maskrcnn took 0.09516787528991699 secons[0m
+2023-02-20 14:01:42,763 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_u2net took 0.14844489097595215 secons[0m
+2023-02-20 14:01:42,856 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_point took 0.09271645545959473 secons[0m
+2023-02-20 14:01:44,262 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict took 1.7440221309661865 secons[0m
+2023-02-20 14:01:44,262 - fittingAI @antigravity - detectorProcess - [32mINFO - mask segmentation complete[0m
+2023-02-20 14:01:44,263 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: detectorProcess took 1.745149850845337 secons[0m
+2023-02-20 14:02:04,936 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: volumeProcess took 20.67243981361389 secons[0m
+2023-02-20 14:02:43,110 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_maskrcnn took 0.0971822738647461 secons[0m
+2023-02-20 14:02:43,252 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_u2net took 0.14261317253112793 secons[0m
+2023-02-20 14:02:43,344 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_point took 0.09174299240112305 secons[0m
+2023-02-20 14:02:44,411 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict took 1.399329423904419 secons[0m
+2023-02-20 14:02:44,411 - fittingAI @antigravity - detectorProcess - [32mINFO - mask segmentation complete[0m
+2023-02-20 14:02:44,411 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: detectorProcess took 1.4003455638885498 secons[0m
+2023-02-20 14:10:11,411 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_maskrcnn took 0.27167773246765137 secons[0m
+2023-02-20 14:10:11,573 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_u2net took 0.16115641593933105 secons[0m
+2023-02-20 14:10:11,676 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_point took 0.10189533233642578 secons[0m
+2023-02-20 14:10:12,540 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict took 1.4059147834777832 secons[0m
+2023-02-20 14:10:12,541 - fittingAI @antigravity - detectorProcess - [32mINFO - mask segmentation complete[0m
+2023-02-20 14:10:12,541 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: detectorProcess took 1.4075052738189697 secons[0m
+2023-02-20 14:12:36,351 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_maskrcnn took 0.09132504463195801 secons[0m
+2023-02-20 14:12:36,496 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_u2net took 0.14466500282287598 secons[0m
+2023-02-20 14:12:36,587 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_point took 0.09098219871520996 secons[0m
+2023-02-20 14:12:39,293 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict took 3.0372910499572754 secons[0m
+2023-02-20 14:12:39,293 - fittingAI @antigravity - detectorProcess - [32mINFO - mask segmentation complete[0m
+2023-02-20 14:12:39,294 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: detectorProcess took 3.038743495941162 secons[0m
+2023-02-20 14:13:26,043 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_maskrcnn took 0.09202027320861816 secons[0m
+2023-02-20 14:13:26,190 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_u2net took 0.14700865745544434 secons[0m
+2023-02-20 14:13:26,290 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict_point took 0.09955525398254395 secons[0m
+2023-02-20 14:13:27,987 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: predict took 2.036898136138916 secons[0m
+2023-02-20 14:13:27,988 - fittingAI @antigravity - detectorProcess - [32mINFO - mask segmentation complete[0m
+2023-02-20 14:13:27,988 - fittingAI @antigravity - measure_time - [32mINFO - @timefn: detectorProcess took 2.0382542610168457 secons[0m
