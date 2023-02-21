@@ -18,7 +18,7 @@ pd.set_option('mode.chained_assignment',  None) # 경고 off
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
-root = '/home/ljj/data/anti/valid_3'
+# root = '/home/ljj/data/anti/valid_2'
 class ImageViewer(QMainWindow):
     def __init__(self):
         super(ImageViewer, self).__init__()
@@ -125,8 +125,9 @@ class ImageViewer(QMainWindow):
     
     def LoadCsv(self):
         
-        self.urlSource = self.dataSourceField.text()
-        # self.urlSource = '/home/ljj/data/anti/valid_3/valid.csv'
+        self.urlSource = self.dataSourceField.text() +'/valid.csv'
+        self.root = self.dataSourceField.text()
+        # self.urlSource = '/home/ljj/data/anti/valid_2/valid.csv'
         df = pd.read_csv(self.urlSource)
         df.fillna('')
         img_lst = []
@@ -172,8 +173,8 @@ class ImageViewer(QMainWindow):
         self.img_list=[]
         self.mask_list=[]
         for i in range(len(self.df.Mask.values.tolist())):
-            self.mask_list.append(os.path.join(root, self.df.Mask.values.tolist()[i]))
-            self.img_list.append(os.path.join(root, self.df.Landmark.values.tolist()[i]))
+            self.mask_list.append(os.path.join(self.root, self.df.Mask.values.tolist()[i]))
+            self.img_list.append(os.path.join(self.root, self.df.Landmark.values.tolist()[i]))
         
         self.total = len(self.img_list)
 
@@ -294,7 +295,7 @@ class ImageViewer(QMainWindow):
                     # self.mask_radio_t.setChecked(False)
                     # self.point_radio_f.setChecked(False)
                     # self.point_radio_t.setChecked(False)
-                    # if self.point_radio_f.isChecked():
+                    # if self.point_self.radio_f.isChecked():
                     #     self.point_radio_f.toggle()
                     # elif self.point_radio_t.isChecked():
                     #     self.point_radio_t.toggle()
