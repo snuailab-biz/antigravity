@@ -7,6 +7,7 @@ import glob
 import os
 import cv2
 import numpy as np
+import math
 
 from PyQt5.QtWidgets import QApplication, QWidget, QComboBox, QLineEdit, QTableView, QPushButton, QLabel, \
 							QHBoxLayout, QVBoxLayout
@@ -17,7 +18,7 @@ pd.set_option('mode.chained_assignment',  None) # 경고 off
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
-root = '/home/ljj/data/anti/valid_1'
+root = '/home/ljj/data/anti/valid_3'
 class ImageViewer(QMainWindow):
     def __init__(self):
         super(ImageViewer, self).__init__()
@@ -88,7 +89,7 @@ class ImageViewer(QMainWindow):
         # self.mask_chbox.setStyleSheet("QCheckBox::indicator" "{" "width :40px;" "height : 40px;" "}")
 
         self.mask_group = QtWidgets.QGroupBox(self.centralwidget)
-        self.mask_group.setGeometry(QtCore.QRect(1300, 270, 161, 151))
+        self.mask_group.setGeometry(QtCore.QRect(1320, 470, 161, 151))
         self.mask_radio_t = QtWidgets.QRadioButton(self.mask_group)
         self.mask_radio_t.setGeometry(QtCore.QRect(10, 40, 112, 23))
         self.mask_radio_f = QtWidgets.QRadioButton(self.mask_group)
@@ -106,7 +107,7 @@ class ImageViewer(QMainWindow):
         self.pointLabel.setScaledContents(True)
 
         self.point_group = QtWidgets.QGroupBox(self.centralwidget)
-        self.point_group.setGeometry(QtCore.QRect(1300, 1270, 161, 151))
+        self.point_group.setGeometry(QtCore.QRect(1320, 1000, 161, 151))
         self.point_radio_t = QtWidgets.QRadioButton(self.point_group)
         self.point_radio_t.setGeometry(QtCore.QRect(10, 40, 112, 23))
         self.point_radio_f = QtWidgets.QRadioButton(self.point_group)
@@ -123,7 +124,9 @@ class ImageViewer(QMainWindow):
         self.retranslateUi()
     
     def LoadCsv(self):
+        
         self.urlSource = self.dataSourceField.text()
+        # self.urlSource = '/home/ljj/data/anti/valid_3/valid.csv'
         df = pd.read_csv(self.urlSource)
         df.fillna('')
         img_lst = []
@@ -262,6 +265,7 @@ class ImageViewer(QMainWindow):
     def keyPressEvent(self, e):
         if self.ok_img:
             if e.key() == 65:
+                self.apply_valid()
                 if not self.pos == 0:
                     self.pos -= 1
                     point = cv2.imread(self.img_list[self.pos])
@@ -269,16 +273,35 @@ class ImageViewer(QMainWindow):
                     """
                     이미지 처리
                     """
+
                     self.openImage(image=self.toQImage(point))
-                    # self.oark.stpenImage(image=self.toQImage(mask))
                     self.openImage(image=self.toQImage(mask), type='mask')            
-                    # if self.point_chbox.isChecked():
-                    #     self.point_chbox.toggle()
-                    # if self.mask_chbox.isChecked():
-                    #     self.mask_chbox.toggle()
-                    print('\r' + self.img_list[self.pos], end="")
+                    landmark_tf = self.df['Valid Landmark'][self.df[self.df.Landmark.str.contains(self.img_list[self.pos].split('/')[-1])].index]
+                    mask_tf = self.df['Valid Mask'][self.df[self.df.Landmark.str.contains(self.img_list[self.pos].split('/')[-1])].index]
+                    if type(landmark_tf) != float:
+                        if landmark_tf.values[0]=='O':
+                            self.point_radio_t.setChecked(True)
+                        elif landmark_tf.values[0]=='X':
+                            self.point_radio_f.setChecked(True)
+                        if mask_tf.values[0]=='O':
+                            self.mask_radio_t.setChecked(True)
+                        elif mask_tf.values[0]=='X':
+                            self.mask_radio_f.setChecked(True)
+
+
+
+                    # if self.mask_group.isChecked():
+                    # self.mask_radio_t.setChecked(False)
+                    # self.point_radio_f.setChecked(False)
+                    # self.point_radio_t.setChecked(False)
+                    # if self.point_radio_f.isChecked():
+                    #     self.point_radio_f.toggle()
+                    # elif self.point_radio_t.isChecked():
+                    #     self.point_radio_t.toggle()
+                    # print('\r' + self.img_list[self.pos], end="")
                                                     
             elif e.key() == 68:
+                self.apply_valid()
                 self.pos += 1
                 if self.total == self.pos:
                     self.pos -= 1
@@ -289,11 +312,35 @@ class ImageViewer(QMainWindow):
                 """
                 self.openImage(image=self.toQImage(point))            
                 self.openImage(image=self.toQImage(mask), type='mask')            
+                landmark_tf = self.df['Valid Landmark'][self.df[self.df.Landmark.str.contains(self.img_list[self.pos].split('/')[-1])].index]
+                mask_tf = self.df['Valid Mask'][self.df[self.df.Landmark.str.contains(self.img_list[self.pos].split('/')[-1])].index]
+                if type(landmark_tf) != float:
+                    if landmark_tf.values[0]=='O':
+                        self.point_radio_t.setChecked(True)
+                    elif landmark_tf.values[0]=='X':
+                        self.point_radio_f.setChecked(True)
+
+                    if mask_tf.values[0]=='O':
+                        self.mask_radio_t.setChecked(True)
+                    elif mask_tf.values[0]=='X':
+                        self.mask_radio_f.setChecked(True)
+            elif e.key() == 49:
+                self.mask_radio_t.setChecked(True)
+            elif e.key() == 50:
+                self.mask_radio_f.setChecked(True)
+            elif e.key() == 51:
+                self.point_radio_t.setChecked(True)
+            elif e.key() == 52:
+                self.point_radio_f.setChecked(True)
+
+
+
+
                 # if self.point_chbox.isChecked():
                 #     self.point_chbox.toggle()
                 # if self.mask_chbox.isChecked():
                 #     self.mask_chbox.toggle()
-                print('\r' + self.img_list[self.pos], end="")
+                # print('\r' + self.img_list[self.pos], end="")
 
     def openImage(self, image=None, fileName=None, type='img'):
             if image == None:
