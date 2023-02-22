@@ -1,5 +1,5 @@
 from utils_dataset import split_dataset
-from utils_segm import mask2coco
+from utils import mask2coco
 from detector_args import DetectorArgs
 
 if __name__ == "__main__":
